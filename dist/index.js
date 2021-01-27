@@ -14,7 +14,7 @@ AxiosInstance.get(url)
     const statsTable = $('.statsTableContainer > tr'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
     const anunciosImoveis = [];
     statsTable.each((i, elem) => {
-        const titulo = $(elem).find('.titulo > strong').text();
+        const titulo = $(parseInt($('section > div > h1').find('titulo : strong').text()));
         const endereco = $(elem).find('.endereco > strong').text();
         const taxa = parseFloat($(elem).find('.taxa > strong').text());
         const area = parseInt($(elem).find('.mainStat').text());

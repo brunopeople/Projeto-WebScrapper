@@ -25,9 +25,9 @@ AxiosInstance.get(url)
       const statsTable: cheerio.Cheerio = $('.statsTableContainer > tr'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
       const anunciosImoveis: ImoveisData[] = [];
 
-      statsTable.each((i, elem) => {
-        const titulo: string = $(elem).find('.titulo > strong').text(); 
-        const endereco: string = $(elem).find('.endereco > strong').text(); 
+      statsTable.each(() => {
+        const titulo: string = $('section > div > h1').find('titulo : strong').text();
+        const endereco: string = $('div > span > div > p').find('endereco : strong').text();
         const taxa: number = parseFloat($(elem).find('.taxa > strong').text()); 
         const area: number = parseInt($(elem).find('.mainStat').text()); 
         const suites:number = parseInt($(elem).find('suites > strong').text());

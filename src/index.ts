@@ -22,7 +22,7 @@ AxiosInstance.get(url)
     response => {
       const html = response.data; // Get the HTML from the HTTP request
       const $ = cheerio.load(html); // Load the HTML string into cheerio
-      const statsTable: cheerio = $('.statsTableContainer > tr'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
+      const statsTable: cheerio.Cheerio = $('.statsTableContainer > tr'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
       const anunciosImoveis: ImoveisData[] = [];
 
       statsTable.each((i, elem) => {

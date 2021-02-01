@@ -21,19 +21,20 @@ AxiosInstance.get(url)
   .then( 
     response => {
       const html = response.data; // Get the HTML from the HTTP request
+      console.log(html);
       const $ = cheerio.load(html); // Load the HTML string into cheerio
-      const statsTable: cheerio.Cheerio = $('.statsTableContainer > tr'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
+      const statsTable: cheerio.Cheerio = $('.js-card-title > div'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
       const anunciosImoveis: ImoveisData[] = [];
 
-      statsTable.each(() => {
-        const titulo: string = $('section > div > h1').find('titulo : strong').text();
-        const endereco: string = $('div > span > div > p').find('endereco : strong').text();
-        const taxa: number = parseFloat($(elem).find('.taxa > strong').text()); 
-        const area: number = parseInt($(elem).find('.mainStat').text()); 
-        const suites:number = parseInt($(elem).find('suites > strong').text());
-        const banheiros: number = parseInt($(elem).find('banheiros > strong').text());
-        const estacionamento: number = parseInt($(elem).find('estacionamento > strong').text());
-        const preco: number = parseInt($(elem).find('preco > strong').text());
+      statsTable.each((i,elem) => {
+        const titulo: string = $(elem).find('span.js-card-title').text();
+        const endereco: string = $(elem).find('span.js-property-card-address').text();
+        const taxa: number = parseFloat($(elem).find('div.js-property-card-prices').text().trim().slice(2));
+        const area: number = parseInt($(elem).find('span-js-property-card-detail-area').text()); 
+        const suites:number = parseInt($(elem).find('span.property-card__detail-value.js-property-card-value').text());
+        const banheiros: number = parseInt($(elem).find('span.property-card__detail-value.js-property-card-value').text());
+        const estacionamento: number = parseInt($(elem).find('span.property-card__detail-value js-property-card-value').text());
+        const preco: number = parseInt($(elem).find('div.property-card__price js-property-card-prices js-property-card__price-small').text());
 
 
         anunciosImoveis.push({
@@ -51,4 +52,4 @@ AxiosInstance.get(url)
       console.log(anunciosImoveis);
     }
   )
-  .catch(console.error); // Error handling
+  .catch(console.error); // Error handling0

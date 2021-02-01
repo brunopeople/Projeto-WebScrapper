@@ -10,18 +10,19 @@ const AxiosInstance = axios_1.default.create(); // Create a new Axios Instance
 AxiosInstance.get(url)
     .then(response => {
     const html = response.data; // Get the HTML from the HTTP request
+    console.log(html);
     const $ = cheerio_1.default.load(html); // Load the HTML string into cheerio
-    const statsTable = $('.statsTableContainer > tr'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
+    const statsTable = $('.js-card-title > div'); // Parse the HTML and extract just whatever code contains .statsTableContainer and has tr inside
     const anunciosImoveis = [];
     statsTable.each((i, elem) => {
-        const titulo = $(parseInt($('section > div > h1').find('titulo : strong').text()));
-        const endereco = $(elem).find('.endereco > strong').text();
-        const taxa = parseFloat($(elem).find('.taxa > strong').text());
-        const area = parseInt($(elem).find('.mainStat').text());
-        const suites = parseInt($(elem).find('suites > strong').text());
-        const banheiros = parseInt($(elem).find('banheiros > strong').text());
-        const estacionamento = parseInt($(elem).find('estacionamento > strong').text());
-        const preco = parseInt($(elem).find('preco > strong').text());
+        const titulo = $(elem).find('span.js-card-title').text();
+        const endereco = $(elem).find('span.js-property-card-address').text();
+        const taxa = parseFloat($(elem).find('div.js-property-card-prices').text().trim().slice(2));
+        const area = parseInt($(elem).find('span-js-property-card-detail-area').text());
+        const suites = parseInt($(elem).find('span.property-card__detail-value.js-property-card-value').text());
+        const banheiros = parseInt($(elem).find('span.property-card__detail-value.js-property-card-value').text());
+        const estacionamento = parseInt($(elem).find('span.property-card__detail-value js-property-card-value').text());
+        const preco = parseInt($(elem).find('div.property-card__price js-property-card-prices js-property-card__price-small').text());
         anunciosImoveis.push({
             titulo,
             endereco,
@@ -35,5 +36,5 @@ AxiosInstance.get(url)
     });
     console.log(anunciosImoveis);
 })
-    .catch(console.error); // Error handling
+    .catch(console.error); // Error handling0
 //# sourceMappingURL=index.js.map

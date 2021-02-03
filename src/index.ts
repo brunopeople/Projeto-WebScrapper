@@ -31,12 +31,12 @@ AxiosInstance.get(url)
       statsTable.each((i,elem) => {
         const titulo: string = $(elem).find('span.js-card-title').text();
         const endereco: string = $(elem).find('span.js-property-card-address').text();
-        const taxa: number = parseFloat($(elem).find('div.js-property-card-prices').text().trim().slice(2));
-        const area: number = parseInt($(elem).find('span-js-property-card-detail-area').text()); 
-        const suites:number = parseInt($(elem).find('span.property-card__detail-value.js-property-card-value').text());
-        const banheiros: number = parseInt($(elem).find('span.property-card__detail-value.js-property-card-value').text());
-        const estacionamento: number = parseInt($(elem).find('span.property-card__detail-value js-property-card-value').text());
-        const preco: number = parseInt($(elem).find('div.property-card__price js-property-card-prices js-property-card__price-small').text());
+        const taxa: number = parseFloat($(elem).find('div.js-condo-price').text().trim().slice(2));
+        const area: number = parseInt($(elem).find('li.js-property-card-area').text()); 
+        const suites:number = parseInt($(elem).find('li.js-property-detail-rom').text());
+        const banheiros: number = parseInt($(elem).find('span.js-property-card-value').text());
+        const estacionamento: number = parseInt($(elem).find('span.js-property-card-value').text());
+        const preco: number = parseInt($(elem).find('div.js-property-card-prices').text());
 
 
         anunciosImoveis.push({
@@ -49,10 +49,6 @@ AxiosInstance.get(url)
           estacionamento,
           preco
         })
-        const json2csvParser = new Parser();
-        const csv = json2csvParser.parser(anunciosImoveis);
-        console.log(anunciosImoveis);
-        fs.writeFileSync('/dados-imoveis.csv', csv, 'utf8');
       })
 
       console.log(anunciosImoveis);

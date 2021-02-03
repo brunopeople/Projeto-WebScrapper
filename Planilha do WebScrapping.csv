@@ -1,6 +1,369 @@
-,,,,,,Planilha para Aplicação de Webscrap,,,
-Titulo,Endereço,Taxa de Condominio,,Area,Suites,banheiros,Estacionamentos,,Preço
-"Apartamento com 3 Quartos à venda, 185m²","Avenida Campos Sales - Tirol, Natal-RN",R$ 550,,185m²,3,4,4,,R$ 185000
-Gran Parc Petropolis,Rua Mipibú -TIrol-Natal-RN,Sob Consulta,,120m²,1,1,2,,Sob Consulta
-"Apartamento com 2 quartos à venda, 52mº²","Rua Antônio Madruga,2004",R$ 250,,52m²,2,2,NAN,,R$ 124000
-"Apartamento com 3 Quartos à venda, 100m2",Rua Amintas Barros- Nova Parnamirim ,R$ 599,,100m2,3,2,NAN,,NAM
+
+
+
+
+
+
+
+
+
+
+"titulo: '  Apartamento com 2 Quartos à Venda, 54m²  ',"
+"endereco: '  Rua Agrestina, 1620 - Planalto, Natal - RN    ver mapa   ',"
+"taxa: 120,"
+"area: NaN,"
+"suites: 54,"
+"banheiros: 54,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Gran Parc Petropolis  ',"
+"endereco: '  Rua Mipibu, 741 - Petrópolis, Natal - RN    ver mapa   ',"
+"taxa: NaN,"
+"area: NaN,"
+"suites: 100,"
+"banheiros: 100,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com  Quarto à Venda, 55m²  ',"
+"endereco: '  Rua Afonso Magalhães - Ponta Negra, Natal - RN    ver mapa   ',"
+"taxa: 180,"
+"area: NaN,"
+"suites: 55,"
+"banheiros: 55,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 120m²  ',"
+"endereco: '  Avenida Amintas Barros, 3735 - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 599,"
+"area: NaN,"
+"suites: 120,"
+"banheiros: 120,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 100m²  ',"
+"endereco: '  Rua Professora Francisca Ivone Cavalcanti, 35 - Ponta Negra, Natal - RN    ver mapa   ',"
+"taxa: 420,"
+"area: NaN,"
+"suites: 100,"
+"banheiros: 100,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 165m²  ',"
+"endereco: '  Barro Vermelho, Natal - RN    ver mapa   ',"
+"taxa: 295,"
+"area: NaN,"
+"suites: 165,"
+"banheiros: 165,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 75m²  ',"
+"endereco: '  Rua Eletricista Elias Ferreira, 2600 - Candelária, Natal - RN    ver mapa   ',"
+"taxa: 320,"
+"area: NaN,"
+"suites: 75,"
+"banheiros: 75,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 224m²  ',"
+"endereco: '  Rua Jundiaí, 551 - Tirol, Natal - RN    ver mapa   ',"
+"taxa: 1.9,"
+"area: NaN,"
+"suites: 224,"
+"banheiros: 224,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Pavarotti Magnifico  ',"
+"endereco: '  Rua Pinto Martins, 310 - Areia Preta, Natal - RN    ver mapa   ',"
+"taxa: NaN,"
+"area: NaN,"
+"suites: 236,"
+"banheiros: 236,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 52m²  ',"
+"endereco: '  Rua Antônio Madruga, 2004 - Capim Macio, Natal - RN    ver mapa   ',"
+"taxa: 124,"
+"area: NaN,"
+"suites: 52,"
+"banheiros: 52,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 60m²  ',"
+"endereco: '  Avenida Engenheiro Roberto Freire, 4702 - Ponta Negra, Natal - RN    ver mapa   ',"
+"taxa: 345,"
+"area: NaN,"
+"suites: 60,"
+"banheiros: 60,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 94m²  ',"
+"endereco: '  Rua Nelson Geraldo Freire, 705 - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 330,"
+"area: NaN,"
+"suites: 94,"
+"banheiros: 94,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 185m²  ',"
+"endereco: '  Avenida Campos Sales - Tirol, Natal - RN    ver mapa   ',"
+"taxa: 550,"
+"area: NaN,"
+"suites: 185,"
+"banheiros: 185,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 57m²  ',"
+"endereco: '  Rua Jornalista Francisco Sinedino, 535 - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 350,"
+"area: NaN,"
+"suites: 57,"
+"banheiros: 57,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 58m²  ',"
+"endereco: '  Rua dos Pintassilgos - Cidade Satelite, Natal - RN    ver mapa   ',"
+"taxa: 175,"
+"area: NaN,"
+"suites: 58,"
+"banheiros: 58,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Carrara  ',"
+"endereco: '  Rua Apodi, 421 - Tirol, Natal - RN    ver mapa   ',"
+"taxa: NaN,"
+"area: NaN,"
+"suites: 131,"
+"banheiros: 131,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 131m²  ',"
+"endereco: '  Rua Doutor Rômulo Jorge, 160 - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 649.999,"
+"area: NaN,"
+"suites: 131,"
+"banheiros: 131,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 56m²  ',"
+"endereco: '  Ponta Negra, Natal - RN    ver mapa   ',"
+"taxa: 250,"
+"area: NaN,"
+"suites: 56,"
+"banheiros: 56,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 87m²  ',"
+"endereco: '  Neópolis, Natal - RN    ver mapa   ',"
+"taxa: 160,"
+"area: NaN,"
+"suites: 87,"
+"banheiros: 87,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 167m²  ',"
+"endereco: '  Rua Morais Navarro - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 690,"
+"area: NaN,"
+"suites: 167,"
+"banheiros: 167,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 4 Quartos à Venda, 200m²  ',"
+"endereco: '  Rua Sachet, 282 - Ribeira, Natal - RN    ver mapa   ',"
+"taxa: 1.2,"
+"area: NaN,"
+"suites: 200,"
+"banheiros: 200,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 72m²  ',"
+"endereco: '  Rua Lúcia Viveiros - Neópolis, Natal - RN    ver mapa   ',"
+"taxa: 355,"
+"area: NaN,"
+"suites: 72,"
+"banheiros: 72,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 123m²  ',"
+"endereco: '  Rua Jaguarari, 4985 - Candelária, Natal - RN    ver mapa   ',"
+"taxa: 590,"
+"area: NaN,"
+"suites: 123,"
+"banheiros: 123,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 103m²  ',"
+"endereco: '  Capim Macio, Natal - RN    ver mapa   ',"
+"taxa: 510,"
+"area: NaN,"
+"suites: 103,"
+"banheiros: 103,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 4 Quartos à Venda, 280m²  ',"
+"endereco: '  Avenida Campos Sales, 501 - Petrópolis, Natal - RN    ver mapa   ',"
+"taxa: 2.58,"
+"area: NaN,"
+"suites: 280,"
+"banheiros: 280,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 119m²  ',"
+"endereco: '  Rua Morais Navarro, 55 - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 579,"
+"area: NaN,"
+"suites: 119,"
+"banheiros: 119,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 80m²  ',"
+"endereco: '  Rua Água Marinha, 1980 - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 215,"
+"area: NaN,"
+"suites: 80,"
+"banheiros: 80,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 84m²  ',"
+"endereco: '  Rua Joaquim Eduardo de Farias, 0 - Neópolis, Natal - RN    ver mapa   ',"
+"taxa: 310,"
+"area: NaN,"
+"suites: 84,"
+"banheiros: 84,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda/Aluguel 75m²  ',"
+"endereco: '  Avenida Brigadeiro Gomes Ribeiro, 1160 - Nova Descoberta, Natal - RN    ver mapa   ',"
+"taxa: 1.55,"
+"area: NaN,"
+"suites: 75,"
+"banheiros: 75,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 65m²  ',"
+"endereco: '  Avenida Engenheiro Roberto Freire, 0 - Ponta Negra, Natal - RN    ver mapa   ',"
+"taxa: 429,"
+"area: NaN,"
+"suites: 65,"
+"banheiros: 65,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 142m²  ',"
+"endereco: '  Rua José Alberi Matos Ferreira, 95 - Lagoa Nova, Natal - RN    ver mapa   ',"
+"taxa: 950,"
+"area: NaN,"
+"suites: 142,"
+"banheiros: 142,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 109m²  ',"
+"endereco: '  Rua Missionário Gunnar Vingren - Capim Macio, Natal - RN    ver mapa   ',"
+"taxa: 649,"
+"area: NaN,"
+"suites: 109,"
+"banheiros: 109,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 56m²  ',"
+"endereco: '  Rua Adolfo Gordo, 1035 - Cidade da Esperança, Natal - RN    ver mapa   ',"
+"taxa: 159,"
+"area: NaN,"
+"suites: 56,"
+"banheiros: 56,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 136m²  ',"
+"endereco: '  Rua Afrânio Peixoto - Barro Vermelho, Natal - RN    ver mapa   ',"
+"taxa: 170,"
+"area: NaN,"
+"suites: 136,"
+"banheiros: 136,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 2 Quartos à Venda, 60m²  ',"
+"endereco: '  POTILANDIA, Natal - RN    ver mapa   ',"
+"taxa: 140,"
+"area: NaN,"
+"suites: 60,"
+"banheiros: 60,"
+"estacionamento: NaN,"
+preco: NaN
+"},"
+{
+"titulo: '  Apartamento com 3 Quartos à Venda, 83m²  ',"
+"endereco: '  Rua Maria Nazaré de Araújo, 259 - Capim Macio, Natal - RN    ver mapa   ',"
+"taxa: 398,"
+"area: NaN,"
+"suites: 83,"
+"banheiros: 83,"
+"estacionamento: NaN,"
+preco: NaN
+}

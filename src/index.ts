@@ -4,6 +4,8 @@ import cheerio from 'cheerio';
 const url = 'https://www.vivareal.com.br/venda/rio-grande-do-norte/natal/apartamento_residencial/'; // URL we're scraping
 const AxiosInstance = axios.create(); // Create a new Axios Instance
 
+let anunciosImoveis = [];
+
 // This is the structure of the player data we recieve
 interface ImoveisData {
   titulo: string; 
@@ -47,6 +49,10 @@ AxiosInstance.get(url)
           estacionamento,
           preco
         })
+        const json2csvParser = new Parser();
+        const csv = json2csvParser.parser(anunciosImoveis);
+        console.log(anunciosImoveis);
+        fs.writeFileSync('/dados-imoveis.csv', csv, 'utf8');
       })
 
       console.log(anunciosImoveis);
